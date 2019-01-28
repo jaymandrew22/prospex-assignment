@@ -85,11 +85,239 @@
 
 /* Uncomment out the line below to help debug layout issues */
 /*@import './imports/_debug';*/
+.leftcolumn {
+  width: 100%;
+}
 
+.home-page h1 {
+  color:rgb(255,140,0);
+  font-weight: bold;
+  padding-top: 5rem;
+  font-size: 42px;
+  margin-left: 25%;
+  padding-bottom: 1rem;
+}
+
+.home-page h2 {
+  color:rgb(255,140,0);
+  font-weight: bold;
+  font-size: 42px;
+  margin-left: 25%;
+  /* padding-bottom: 2rem; */
+}
+
+.streams-subhead {
+  color:rgb(255,140,0);
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 25%;
+  margin-top: 4rem;
+}
+
+.the-challenge p {
+  position: relative;
+  top: -14rem;
+  max-width: 20rem;
+  margin-left: 25%;
+  padding-bottom: 5rem;
+}
+
+.the-challenge-2 p {
+  position: relative;
+  top: -18rem;
+  max-width: 40rem;
+  margin-left: 25%;
+}
+
+.streams-p {
+  top:1rem;
+  position: relative;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.streams-bottom-p {
+  top:1rem;
+  position: relative;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3rem;
+}
+
+.streams-quote-middle {
+  top:2rem;
+  font-style: italic;
+  position: relative;
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.streams-quote-wide {
+  top:2rem;
+  font-style: italic;
+  position: relative;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.what-we-do p {
+  position: relative;
+  top: -14rem;
+  max-width: 20rem;
+  margin-left: 25%;
+  padding-bottom: 5rem;
+}
+
+.why-were-different p  {
+  position: relative;
+  top: -14rem;
+  max-width: 20rem;
+  margin-left: 25%;
+  padding-bottom: 1rem;
+}
+
+.about-us p  {
+  position: relative;
+  max-width: 50%;
+  margin-left: 25%;
+}
+
+.about-us-subhead {
+  color:rgb(255,140,0);
+  top: 1rem;
+  position: relative;
+  font-weight: bold;
+  margin-left: 25%;
+  font-size: 24px;
+}
+
+.about-us-21 {
+  position: relative;
+  max-width: 50%;
+  margin-left: 25%;
+  top: 1rem;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 80%;
+  margin-bottom: 6px;
+  padding: 0 8px;
+}
+
+.row {
+  margin-left: 20%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.name {
+  font-size: 2px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.wide-para p {
+  position: relative;
+  top: -14rem;
+  max-width: 40rem;
+  margin-left: 25%;
+}
+
+.home-img {
+  margin-left: 50%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.home-logo {
+  position: absolute;
+  top: 12rem;
+  left: 25rem;
+  border-radius: 1rem;
+}
+
+.home-title {
+  position: absolute;
+  top: 20rem;
+  background-color: #f1f1f1;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+}
+
+.back-to-top a {
+  color: white;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 1rem;
+  background: rgba(0,0,0,.7);
+  border-radius: 0 0.5rem 0.5rem 0;
+  text-decoration: none;
+}
+
+.back-to-top a:hover {
+ text-decoration: none;
+ color: white;
+ background: rgba(50,50,50,0.7);
+
+}
 
 .donate-widget {
  position: fixed;
- top: calc(50% - 1.75rem);
+ top: 36rem;
  right:0;
 
 }
@@ -109,4 +337,71 @@
  color: white;
  background: rgba(50,50,50,0.7);
 
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgb(83,80,80);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(255,140,0);
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: rgba(255,140,0,0.2);
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.nav {
+  height: 4rem;
+  width: fill;
+  position:fixed;
+  background: #f1f1f1;
+  }
+
+.menu-button {
+  position: fixed;
+  left: 0;
+  top: 1rem;
+  font-size: 32px;
+  color:rgb(255,140,0);
+  cursor:pointer;
+}
+
+.prospex-logo {
+  position: fixed;
+  right: 0;
+  height: 8rem;
+  width: 14rem;
 }

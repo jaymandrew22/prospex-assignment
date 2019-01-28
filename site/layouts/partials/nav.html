@@ -1,19 +1,37 @@
-<nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative">
+<nav class ="nav">
 
 	<!-- Logo -->
-	<a href="/" class="pa3 db mr4 h-100 w3 flex-none">
-		<img src="/img/download.png" alt="Kaldi logo" class="br0 db mb0 w-100"/>
+	<div class ="prospex-logo">
+	<a href="/" title="Prospex home">
+		<img src="/img/prospex-logo.png" alt="Prospex logo">
 	</a>
+	</div>
 
 	<!-- Primary Nav -->
-	<ul class="flex b grey-3">
-		<li><a href="/programmes" class="pa3 no-underline db">Programmes</a></li>
+<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="#Challenge" class="pa3 no-underline db">The Challenge</a>
+	<a href="#What-we-do" class="pa3 no-underline db">What we do</a>
+	<a href="#Why-we're-different" class="pa3 no-underline db">Why we're different</a>
+	<a href="#About-us" class="pa3 no-underline db">About us</a>
+	<a href="#the-team" class="pa3 no-underline db">The Team</a>
+	<a href="/Donate" class="pa3 no-underline db">Donate</a>
+	<a href="/Blog" class ="pa3 no-underline db">Blog</a>
+  <a href="/Contact" class ="pa3 no-underline db">Contact</a>
+</div>
 
-		<li><a href="/donate" class="pa3 no-underline db">Donate</a></li>
+<div class="menu-button">
+<span onclick="openNav()">&#9776; MENU</span>
+</div>
 
-		<li><a href="/blog" class="pa3 no-underline db">Blog</a></li>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
-		<li><a href="/contact" class="pa3 no-underline db">Contact</a></li>
-	</ul>
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 
 </nav>
